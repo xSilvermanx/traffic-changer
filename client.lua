@@ -218,13 +218,13 @@ function RespawnCar(car, area)
 	
 	if area == 'Highway' then
 		ModelList = ModelsHighway
-		number = math.random(1,4)
+		number = math.random(1,#ModelList)
 	elseif area == 'County' then
 		ModelList = ModelsCounty
-		number = math.random(1,6)
+		number = math.random(1,#ModelList)
 	else
 		ModelList = ModelsCity
-		number = math.random(1,5)
+		number = math.random(1,#ModelList)
 	end
 
 	for i=-1,2 do
